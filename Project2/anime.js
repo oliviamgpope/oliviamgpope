@@ -47,7 +47,7 @@ anime({
     easing: 'easeInOutQuad'
 });
 
-// PROPERTIES
+// PROPERTIES ICON 
 let props = document.querySelectorAll(".image")
 anime({
     targets: props,
@@ -56,7 +56,7 @@ anime({
         duration: 800
     },
     rotate: {
-        value: 330,
+        value: 60,
         duration: 1800,
         easing: 'easeInOutSine'
     },
@@ -70,4 +70,29 @@ anime({
     direction: 'alternate',
     delay: 250 // All properties except 'scale' inherit 250ms delay
 });
-// example
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+//green box
+let animation = anime({
+  targets: 'div',
+  translateX: 100,
+  borderRadius: 50,
+  duration: 2000,
+  easing: 'linear',
+  direction: 'alternate'
+});    

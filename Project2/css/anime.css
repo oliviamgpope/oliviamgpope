@@ -1,0 +1,27 @@
+.txt {
+    position: relative;
+    color: brown
+}
+
+.row {
+    height: 40px;
+    margin: 5px;
+}
+
+.row1 {
+    height: 40px;
+    background-color: pink;
+    margin: 5px;
+}
+
+.image {
+    opacity: 1;
+}
+
+// green box
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
