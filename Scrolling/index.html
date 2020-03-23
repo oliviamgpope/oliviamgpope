@@ -1,41 +1,210 @@
-<html>
-    <head>
-        <script src="libs/anime.min.js"></script>
-        <script src="libs/p5.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="scrolling.css">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Evergreen Colorado</title>
+		<meta name="description" content="Some grid animation effects using anime.js" />
+		<meta name="keywords" content="grid, animation, effect, anime.js, inspiration, web design, javascript" />
+	
+
+<link rel="stylesheet" href="https://use.typekit.net/aku8mpq.css">
+
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+
+<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
     
-    </head>
-
-    
-    <body>
-
-<!-- The video -->
-<video autoplay muted loop id="myVideo">
-  <source src="media/Cabernet_franc.mp4" type="video/mp4">
-</video>
-
-<!-- Optional: some overlay text to describe the video -->
-<div class="content">
-  <h1>Evergreen Colorado </h1>
-  <p>Lorem ipsum...</p>
-  <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-    </body>
-<!-- gallery --> 
-  <div class="tiles">
-    <div class="tile" data-scale="1.1" data-image="http://ultraimg.com/images/0yS4A9e.jpg"></div>
-    <div class="tile" data-scale="1.6" data-image="http://ultraimg.com/images/hzQ2IGW.jpg"></div>
-    <div class="tile" data-scale="2.4" data-image="http://ultraimg.com/images/bNeWGWB.jpg"></div>
-  </div>
-<!-- gallery end --> 
-
-
-
-
-
-
-        <script src="src/script.js"></script>
-    
-
+	<body class="demo-1 loading">
+		<!-- we are "preloading" the images in this hard-coded way; this should be done properly in a project, i.e. on click load -->
+		<div class="hidden">
+			<img src="img/large/1.jpg"/>
+			<img src="img/large/2.jpg"/>
+			<img src="img/large/3.jpg"/>
+			<img src="img/large/4.jpg"/>
+			<img src="img/large/5.jpg"/>
+			<img src="img/large/6.jpg"/>
+			<img src="img/large/7.jpg"/>
+			<img src="img/large/8.jpg"/>
+			<img src="img/large/9.jpg"/>
+			<img src="img/large/10.jpg"/>
+			<img src="img/large/11.jpg"/>
+			<img src="img/large/12.jpg"/>
+			<img src="img/large/13.jpg"/>
+			<img src="img/large/14.jpg"/>
+			<img src="img/large/15.jpg"/>
+			<img src="img/large/16.jpg"/>
+			<img src="img/large/17.jpg"/>
+			<img src="img/large/18.jpg"/>
+			<img src="img/large/19.jpg"/>
+			<img src="img/large/20.jpg"/>
+			<img src="img/large/21.jpg"/>
+		</div>
+		<main>
+			<div class="frame">
+			
+<span class="frame__main">A summer in evergreen colorado</span>
+				
+			</div>
+			<div class="content">
+				<h2 class="content__title">Evergreen</h2>
+			</div>
+			<div class="grid-wrap">
+				<div class="grid">
+					<div class="grid__item" data-title="Avalanche Aftermath"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Happier Times"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Happier Times"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title="Happier Times"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Faint"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Lost"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="The First Painting"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Cool Girl"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Bliss"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Meat"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Happier Times"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Best Friends"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Prepared"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Beauty"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item" data-title="Prepared"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Mount Evans"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Pope Mobile"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Early Drives"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="Backpack"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="Mount Evans"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title="Regal"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+                    
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Happier Times"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Cool Girl"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="The First Painting"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="N"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="S"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="P"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title=""><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+				</div>
+			</div>
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle"></div>
+			<span class="cursor__inner cursor__inner--text">&nbsp;</span>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/demo1.js"></script>
+	</body>
 </html>
