@@ -1,0 +1,266 @@
+
+section{
+	width: 100%; 
+	height: 350px;
+	padding-left: 20px;
+	background-position: center center; 
+	background-attachment: fixed; 
+	background-repeat: repeat-x;
+}
+	
+#a1{background-color: #ffDd00; height: 1300px;}
+#a1a{background-color: #15F2D0; background-image: url(https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/);}
+#a1b{background-color: #15F2D0; background-image: url(http://farm8.staticflickr.com/7391/10579565794_aa481639ea_o.png);}
+#a1c{background-color: #15F2D0; background-image: url(http://farm6.staticflickr.com/5544/10579786703_10a808c450_o.png);}
+#a2{background-color: #FFFFFF; height: 1300px;}
+#a2a{background-color: #6ABFE1; background-image: url(http://farm3.staticflickr.com/2857/10579786573_7c5caae44e_o.png);}
+#a2b{background-color: #6ABFE1; background-image: url(http://farm6.staticflickr.com/5491/10579786543_752d8c0f27_o.png);}
+#a2c{background-color: #6ABFE1; background-image: url(http://farm8.staticflickr.com/7438/10579547426_4fa15333ce_o.png);}
+#a3{background-color: #FFFFFF; height: 1300px;}
+#a3a{background-color: #BF8CF2; background-image: url(http://farm4.staticflickr.com/3788/10579786423_ca263fffb9_o.png);}
+#a3b{background-color: #BF8CF2; background-image: url(http://farm8.staticflickr.com/7297/10579547386_807dd3c4dc_o.png);}
+#a3c{background-color: #BF8CF2; background-image: url(http://farm3.staticflickr.com/2862/10579547366_5719e36d01_o.png);}
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 70%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+background-blend-mode: soft-light;
+}
+    
+
+  width: 100%;
+  padding: 20px;
+font-size: 20pt;
+    color:blueviolet;
+}
+
+.row {
+    padding-left: 100pt;
+}
+
+/* amalfi */
+
+body {
+    background-color: #E9E9E9;
+    color: #333;
+    font-family:"Avenir", "Snell Roundhand", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.amp {
+    font-family:Garamond, Baskerville, Georgia, serif !important;
+    font-style:italic;
+    font-weight:normal;
+    border: none;
+}
+a.polaroid {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 10px 20px 10px;
+    width: 150px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    z-index: 2;
+    font-size: 0.7em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+a.polaroid:hover, a.polaroid:focus, a.polaroid:active {
+    z-index: 999;
+    border-color: #6A6A6A;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.polaroid img {
+    margin: 0 0 15px;
+    width: 150px;
+    height: 150px;
+}
+a img {
+    border: none;
+    display: block;
+}
+.photo-album {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 70em;
+    height: 450px;
+    margin-top: 5em;
+    min-width: 800px;
+    max-width: 900px;
+}
+.photo-album .polaroid {
+    position: absolute;
+}
+.photo-album h1 {
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.9;
+}
+.photo-album h1 span {
+    background-color: white;
+    font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+    padding: 0.4em 0.8em 0.3em 0.8em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #6A6A6A;
+}
+.photo-album .small {
+    width: 75px;
+    padding: 6px 6px 12px 6px;
+    font-size: 0.6em;
+}
+.photo-album .small img {
+    width: 75px;
+    height: 75px;
+}
+.photo-album .medium {
+    width: 200px;
+    padding: 13px 13px 26px 13px;
+    font-size: 0.8em;
+}
+.photo-album .medium img {
+    width: 200px;
+    height: 200px;
+}
+.photo-album .large {
+    width: 300px;
+    padding: 20px 20px 30px 20px;
+    font-size: 1em;
+}
+.photo-album .large img {
+    width: 300px;
+    height: 300px;
+}
+.photo-album .img1 {
+    bottom: 10px;
+    right: 365px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.photo-album .img2 {
+    top: 50px;
+    right: 20px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+.photo-album .img3 {
+    left: 400px;
+    top: 0;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.photo-album .img4 {
+    top: 10px;
+    left: 495px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.photo-album .img5 {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+.photo-album .img6 {
+    bottom: 10px;
+    right: 156px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+.photo-album .img7 {
+    bottom:0;
+    left:400px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.photo-album .img8 {
+    bottom: -20px;
+    left: 700px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.photo-album .img9 {
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.photo-album .img10 {
+    top: 0;
+    left: 20px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+.photo-album .img11 {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.photo-album .img12 {
+    top: 0;
+    left: 680px;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+}
+.photo-album .img13 {
+    bottom: -20px;
+    right: 630px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+.photo-album .img14 {
+    top: 90px;
+    left: 430px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.photo-album .img15 {
+    left:176px;
+    top:20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+a:hover, a:focus {
+    z-index: 5;
+}
